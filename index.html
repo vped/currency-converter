@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="fxApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+            <h2>Currency Converter</h2>
+    </div>
+    <div class="row">
+        <div ng-view> <h3>Loading Module...</h3></div>
+    </div>
+</div> <!-- /container -->
+
+<!-- Library scripts -->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/lodash/lodash.js"></script>
+<script src="node_modules/angular/angular.js"></script>
+<script src="node_modules/angular-route/angular-route.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.1.1/Chart.min.js"></script>
+
+<!-- Application scripts -->
+
+<script src="app/utils/lodash-module.js"></script>
+<script src="app/currency-converter/main.js"></script>
+<script src="app/currency-converter/converter-controller.js"></script>
+<script src="app/currency-converter/converter-service.js"></script>
+<script src="app/currency-converter/chart-service.js"></script>
+
+
+<script src="app/app.js"></script>
+
+</body>
+</html>
